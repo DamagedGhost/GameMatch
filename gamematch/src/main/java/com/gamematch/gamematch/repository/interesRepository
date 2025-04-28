@@ -1,0 +1,22 @@
+package com.gamematch.gamematch.repository;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class interesRepository {
+
+    @PersistenceContext
+    private EntityManager EntityManager //gestion de bbdd
+
+    public List<Interes> findAll{
+        return EntityManager.createQuery("SELECT * FROM interes", Interes.class)
+
+
+    }
+
+
+
+
+
+
+}
