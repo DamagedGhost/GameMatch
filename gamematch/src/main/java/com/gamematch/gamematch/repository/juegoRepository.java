@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 public class juegoCRUD {
   // prueba
 
+  // prueba 2
+
 }
