@@ -1,2 +1,2 @@
 # GameMatch
-Projecto FullStack 🔋
+Proyecto FullStack 🔋
