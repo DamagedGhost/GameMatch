@@ -16,4 +16,20 @@ public class mensajeCRUD {
         System.out.println("Mensaje eliminado: " + m.toString());
        
     }
+
+    public void MostrarMensajes(){
+        for (Mensaje m : mensajes) {
+            System.out.println(m.toString());
+        }
+    }
+
+    public void EditarMensaje(Mensaje m, String nuevoContenido){
+        for (Mensaje mensaje : mensajes) {
+            if (mensaje.equals(m)) {
+                mensaje.setNombre(nuevoContenido);
+                System.out.println("Mensaje modificado: " + mensaje.toString());
+            }
+        }
+    }
+
 }
