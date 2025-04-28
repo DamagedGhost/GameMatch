@@ -1,21 +1,16 @@
 package com.gamematch.gamematch.modelo;
 
-//package com.example.demo.modelo;
-
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.util.List;
+//import java.util.List;
 
 public class Perfil {
-    private int id;
-    private User user;
-    private String fotoPerfil;
-    private String biografia;
+    //private int id;
+    //private User user;
+    //private String fotoPerfil;
+    //private String biografia;
     private boolean estado; //si la cuenta esta activa o inactiva
-    private List<DisponibilidadHoraria> disponibilidadSemanal; //CREAR TABLA DE DISPONIBILIDAD HORARIAAAAAAAAA!!!!
-    //que dias puede jugar
-    private List<Juego> juegoFavoritos;
-    private List<Interes> intereses; //qué cosas le gusta!!
+    //private List<DisponibilidadHoraria> disponibilidadSemanal; //CREAR TABLA DE DISPONIBILIDAD HORARIAAAAAAAAA!!!!
+    //private List<Juego> juegoFavoritos;
+    //private List<Interes> intereses; //qué cosas le gusta!!
 
 
 
