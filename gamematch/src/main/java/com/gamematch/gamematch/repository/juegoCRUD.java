@@ -1,34 +1,52 @@
 package com.gamematch.gamematch.repository;
 
-import org.springframework.stereotype.Repository;
-
-@Repository
+import java.util.ArrayList;
+import com.gamematch.gamematch.modelo.Juego;
 
 public class juegoCRUD {
-//    @PersistenceContext
-//    private EntityManager entityManager;
-//
-//      public List<Juego> findAll() {
-//        return entityManager.createQuery("SELECT * FROM juegos", Juego.class).getResultList(); //Listar toda la lista
-//    }
-//
-//    public Juego findById(Long id) { // Buscar por id
-//        return entityManager.find(Juego.class, id);
-//    }
-//
-//    public Juego save(Juego juego) {
-//        if (juego.getId() == null) {
-//            entityManager.persist(juego); // Agregar
-//        } else {
-//            juego = entityManager.merge(juego); // Actualizar
-//        }
-//        return juego;
-//    }
-//
-//    public void delete(Long id) { //borrar por id
-//        Juego juego = findById(id);
-//        if (juego != null) {
-//            entityManager.remove(juego);
-//        }
-//    }
+
+    ArrayList<Juego> listaJuego = new ArrayList<>();
+
+    public ArrayList<Juego> listar() {
+        return listaJuego;
+    }
+
+    public Juego guardar(Juego juego) {
+        listaJuego.add(juego);
+        return juego;
+    }
+
+    public Juego buscar(Long id) {
+        for (Juego juego : listaJuego) {
+            if (juego.getId() == id) {
+                return juego;
+            }
+        }
+        return null;
+    }
+
+    public Juego eliminar(Long id) {
+        for (Juego juego : listaJuego) {
+            if (juego.getId() == id) {
+                listaJuego.remove(juego);
+                return juego;
+            }
+        }
+        return null;
+    }
+
+    public Juego actualizar(Juego juego) {
+        for (Juego j : listaJuego) {
+            if (j.getId() == juego.getId()) {
+                j.setNombre(juego.getNombre());
+                j.setGenero(juego.getGenero());
+                j.setPublicador(juego.getPublicador());
+                j.setPlataforma(juego.getPlataforma());
+                j.setFechaLanzamiento(juego.getFechaLanzamiento());
+                return j;
+            }
+        }
+        return null;
+    }
+
 } 
