@@ -1,7 +1,8 @@
 package com.gamematch.gamematch.repository;
 
 import java.util.ArrayList;
-import com.gamematch.gamematch.modelo.Juego;
+import com.gamematch.gamematch.controller.Juego;
+
 
 public class juegoCRUD {
 

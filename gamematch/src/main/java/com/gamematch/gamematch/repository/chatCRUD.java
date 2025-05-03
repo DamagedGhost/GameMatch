@@ -1,7 +1,9 @@
 package com.gamematch.gamematch.repository;
 import java.util.ArrayList;
 
-import com.gamematch.gamematch.modelo.Chat;
+import com.gamematch.gamematch.controller.Chat;
+
+
 
 public class chatCRUD {
 ArrayList<Chat> chats = new ArrayList<>();

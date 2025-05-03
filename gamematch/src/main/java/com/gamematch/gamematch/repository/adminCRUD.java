@@ -6,7 +6,7 @@ package com.gamematch.gamematch.repository;
 
 // importar las librerías necesarias: arraylist y la clase Admin.
 import java.util.ArrayList;
-import com.gamematch.gamematch.modelo.Admin;
+import com.gamematch.gamematch.controller.Admin;
 
 // Esta clase es un CRUD (Create, Read, Update, Delete) para la entidad Admin.
 public class adminCRUD {

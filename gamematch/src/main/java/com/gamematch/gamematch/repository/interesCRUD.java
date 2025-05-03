@@ -1,10 +1,9 @@
 package com.gamematch.gamematch.repository;
 
 import java.util.ArrayList;
-
 import org.springframework.stereotype.Repository;
+import com.gamematch.gamematch.controller.Interes;
 
-import com.gamematch.gamematch.modelo.Interes;
 
 
 

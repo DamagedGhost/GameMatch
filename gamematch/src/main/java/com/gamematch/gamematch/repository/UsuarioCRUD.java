@@ -6,7 +6,8 @@ package com.gamematch.gamematch.repository;
 
 // importaciones necesarias: ArrayList y la clase Usuario.
 import java.util.ArrayList;
-import com.gamematch.gamematch.modelo.Usuario;
+import com.gamematch.gamematch.controller.Usuario;
+
 
     // Esta clase es un CRUD (Create, Read, Update, Delete) para la entidad Usuario.
 public class UsuarioCRUD {

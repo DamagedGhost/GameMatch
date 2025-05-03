@@ -1,6 +1,9 @@
 package com.gamematch.gamematch.repository;
-import com.gamematch.gamematch.modelo.Mensaje;
+
+
 import java.util.ArrayList;
+import com.gamematch.gamematch.controller.Mensaje;
+
 
 
 public class mensajeCRUD {
