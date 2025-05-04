@@ -5,6 +5,7 @@
 
 package com.gamematch.gamematch.modelo;
 
+import jakarta.persistence.MappedSuperclass;
 // Importa las librerías necesarias: Lombok para la generación automática de código y las anotaciones de la clase.
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,6 +15,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@MappedSuperclass
 
 // La clase User es una clase abstracta que representa un usuario en el sistema.
 public abstract class User {

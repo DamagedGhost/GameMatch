@@ -43,6 +43,7 @@ public class UsuarioCRUD {
     public Usuario buscarPorId(int id) {
         for (Usuario usuario : usuarios) {
             if (usuario.getId() == id) {
+                System.out.println("Usuario encontrado: " + usuario.getNomUsuario());
                 return usuario;
             }
         }
