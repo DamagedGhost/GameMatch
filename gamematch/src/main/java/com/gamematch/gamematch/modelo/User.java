@@ -24,9 +24,4 @@ public abstract class User {
     String contraseña;
     String correo;
 
-    // Métodos abstractos que deben ser implementados por las subclases:
-    // Estos métodos representan acciones que un usuario puede realizar en el sistema.
-    abstract void iniciarSesion();
-
-    abstract void cerrarSesion();
 }

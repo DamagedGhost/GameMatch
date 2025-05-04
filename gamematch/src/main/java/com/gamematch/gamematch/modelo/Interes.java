@@ -1,5 +1,7 @@
 package com.gamematch.gamematch.modelo;
 
+import java.util.ArrayList;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,9 +14,8 @@ import lombok.NoArgsConstructor;
 
 
 public class Interes {
-        @SuppressWarnings("unused")
-        private int idInteres;
-        @SuppressWarnings("unused")           // Identificador único para el interés
-        private String nombreInteres;    // Nombre del interés (por ejemplo, "Música")
+        private int idInteres;      // Identificador único para el interés
+        private String nombreInteres;
+        private ArrayList<Juego> juego;   // Nombre del interés (por ejemplo, "Música")
 
 }
