@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GameMatchApplication<GameMatch>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "GameMatch.GameMatch.GameMatchApplication",
+            "projectName": "GameMatch",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
